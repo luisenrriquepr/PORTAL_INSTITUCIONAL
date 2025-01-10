@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>UGEL 301| CANGALLO</title>
+  <meta name="description"
+    content="La Unidad de Gestión Educativa Local de Cangallo es un órgano desconcentrado del Ministerio de Educación, creado mediante la Resolución Suprema N° 0204-02-ED del 19 de diciembre del 2001; anterior a dicha fecha, venía funcionando como Unidad de Servicios Educativos (USE Cangallo) en merito a la Resolución Ministerial N° 1121-88-ED del 29 de julio de 1989.">
+  <meta name="keywords" content="UGEL CANGALLO, UEECA">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iLanding
+  * Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
+  * Updated: Nov 12 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <style>
+    /* Estilo para el PopUp */
+    #popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      max-width: 400px;
+      background: white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    #popup .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    #popup-content {
+      text-align: center;
+    }
+
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+  </style>
+
+
+</head>
+
+<body class="index-page">
+
+  <div id="overlay"></div>
+  <div id="popup">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <div id="popup-content">
+      <!-- Aquí puedes insertar imágenes o enlaces a PDF -->
+      
+      <img src="assets/img/COMUNICADO_1_page-0001.jpg" alt="Comunicado" style="max-width: 100%; height: auto;">
+      
+    </div>
+  </div>
+
+  <!-- Tu contenido restante aquí -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Título del Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Contenido del modal.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <div class="mobile-nav-toggle d-xl-none">
+        <i class="bi bi-list"></i>
+      </div>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/logo.png" alt="UGEL CANGALLO" class="sitename">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+
+
+        
+
+        <ul>
+          <li><a href="#hero" class="active">INICIO</a></li>
+          <!-- Cabecera NOSOTROS -->
+          <li class="dropdown"><a href="#"><span>NOSOTROS</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Reseña Historica</a></li>
+              <li><a href="#">Organigrama</a></li>
+              <li><a href="#">Misión y Visión</a></li>
+              <li class="dropdown"><a href="#"><span>Instituciones Educativas</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Educación Inicial</a></li>
+                  <li><a href="#">Educación Primaria</a></li>
+                  <li><a href="#">Educación Secundaria</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Cabecera ESTRUCTURA ORGÁNICA -->
+          <li class="dropdown"><a href="#"><span>ESTRUCTURA ORGÁNICA</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>Alta Dirección</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Dirección</a></li>
+                </ul>
+              </li>
+              <!-- Sub cabecera ESTRUCTURA ORGÁNICA -->
+              <li class="dropdown"><a href="#"><span>Órganos de Linea</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Área de Gestión Institucional</a></li>
+                  <li><a href="#">Área de Gestión Pedagógica</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Órgano de Apoyo</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Área de Administración</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Órgano de Control</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Órgano de Contol Institucional</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Cabecera DOCUMENTOS -->
+          <li class="dropdown"><a href="#"><span>DOCUMENTOS</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Oficio</a></li>
+              <li><a href="#">Comunicado</a></li>
+              <li><a href="#">Resoluciones</a></li>
+              <li class="dropdown"><a href="#"><span>Documentos de Gestión</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">ROF</a></li>
+                  <li><a href="#">MOF</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+              <!-- Cabecera CONVOCATORIAS -->
+          <li class="dropdown"><a href="#"><span>CONVOCATORIAS</span> <i
+            class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <ul>
+          <li><a href="#">CAS</a></li>
+          <li><a href="#">D.L. NRO. 276</a></li>
+          <li><a href="#">Promotoras Educativas</a></li>
+          <li><a href="#">Contrato Docente</a></li>
+          <li><a href="#">Contrato Auxiliar</a></li>
+          <li><a href="#">Nombramiento Docente</a></li>
+          <li><a href="#">PAD</a></li>
+        </ul>
+      </li>
+              <!-- Cabecera SITUACIONES ADMINISTRATIVAS -->
+      <li class="dropdown"><a href="#"><span>SITUACIONES ADMINISTRATIVAS</span> <i
+        class="bi bi-chevron-down toggle-dropdown"></i></a>
+    <ul>
+      <li class="dropdown"><a href="#"><span>Docente Nombrado</span> <i
+        class="bi bi-chevron-down toggle-dropdown"></i></a>
+    <ul>
+      <li><a href="#">Reasignación</a></li>
+      <li><a href="#">Permuta</a></li>
+      <li><a href="#">Destaque</a></li>
+      <li><a href="#">Racionalización</a></li>
+    </ul>
+  </li>
+        <li class="dropdown"><a href="#"><span>Auxiliar Nombrado</span> <i
+          class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <ul>
+        <li><a href="#">Reasignación</a></li>
+        <li><a href="#">Permuta</a></li>
+        <li><a href="#">Destaque</a></li>
+        <li><a href="#">Racionalización</a></li>
+      </ul>
+      </li>
+      <li><a href="#">Encargatura</a></li>
+    </ul>
+  </li>
+
+              
+      </nav>
+
+        <!-- PORTAL DE TRANSPARENCIA -->
+
+        <a href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=14132" target="_blank" class="logo d-flex align-items-center">
+          <img src="assets/img/logo-portal-transparencia.png" alt="PORTAL DE TRANSPARENCIA" class="sitename">
+        </a>
+
+    </div>
+
+
+
+    
+  </header>
+
+
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+              <div class="company-badge mb-4">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScT8AUaDsGRI1OhFqIzIDgeEw53VFH0GhXO7Y4g8ERUyoEb9Q/viewform" target="_blank">
+                <i class="bi bi-file-earmark-text me-2"></i>
+                Mesa de partes virtual
+                </a>
+              </div>
+
+              <h1 class="mb-4">
+                Unidad de Gestión<br>
+                Educativa Local<br>
+                <span class="accent-text">Cangallo</span>
+              </h1>
+
+              <p class="mb-4 mb-md-5">
+                Somos una institución lider, promotora, asegurando que los agentes educativos dispongan de las mejores oportunidades en el servicio educativo adecuado y eficaz, con personal competente, idóneo y calificado, logrando aprendizajes y conocimientos, impulsando el desarrollo de la educación bilingüe intercultural e inclusiva comprometido con un trabajo descentralizado y concertado para contribuir con la sostenibilidad del desarrollo humano de la Provincia y de la Región, reduciendo el analfabetismo.
+
+              </p>
+
+              <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary me-0 me-sm-2 mx-1">Directorio de Funcionarios</a>
+                <a href="https://www.youtube.com/watch?v=6Wjqx0T0nfM&t=3s" class="btn btn-link mt-2 mt-sm-0 glightbox">
+                  <i class="bi bi-play-circle me-1"></i>
+                  Reproducir Video
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6">
+            <table class="table table-bordered">
+              <tr>
+                <td>
+                  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000" data-aos="zoom-out" data-aos-delay="300">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/img/illustration-1.jpg" class="d-block w-100 img-fluid carousel-fixed-size" alt="Hero Image 1">
+                        <div class="carousel-caption d-none d-md-block bg-overlay">
+                          <h5>Imagen 1 Descripción</h5>
+                          <p>Esta es una breve descripción de la imagen 1.</p>
+                          <a href="#article1" class="btn btn-primary">Leer Artículo</a>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/illustration-2.jpg" class="d-block w-100 img-fluid carousel-fixed-size" alt="Hero Image 2">
+                        <div class="carousel-caption d-none d-md-block bg-overlay">
+                          <h5>Imagen 2 Descripción</h5>
+                          <p>Esta es una breve descripción de la imagen 2.</p>
+                          <a href="#article2" class="btn btn-primary">Leer Artículo</a>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/illustration-3.jpg" class="d-block w-100 img-fluid carousel-fixed-size" alt="Hero Image 3">
+                        <div class="carousel-caption d-none d-md-block bg-overlay">
+                          <h5>Imagen 3 Descripción</h5>
+                          <p>Esta es una breve descripción de la imagen 3.</p>
+                          <a href="#article3" class="btn btn-primary">Leer Artículo</a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          
+
+        </div>
+
+        <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-3 col-md-6">
+            <a href="encargaturas.html" class="stat-item-link">
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="bi bi-person-bounding-box"></i> <!-- Cambiado el icono -->
+                </div>
+                <div class="stat-content">
+                  <h4>Encargaturas</h4>
+                  <p class="mb-0">Cargo temporal provicional</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="sgd.html" class="stat-item-link">
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="bi bi-files"></i> <!-- Cambiado el icono -->
+                </div>
+                <div class="stat-content">
+                  <h4>SGD</h4>
+                  <p class="mb-0">Sistema de Gestión Documental</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="https://servicios-ayni.minedu.gob.pe/" class="stat-item-link">
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="bi bi-cash"></i> <!-- Cambiado el icono -->
+                </div>
+                <div class="stat-content">
+                  <h4>Mi Boleta</h4>
+                  <p class="mb-0">AYNI | PLATAFORMA</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="https://facilita.gob.pe/t/5857" class="stat-item-link">
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="bi bi-chat-square-text"></i> <!-- Cambiado el icono -->
+                </div>
+                <div class="stat-content">
+                  <h4>Libro de reclamaciones</h4>
+                  <p class="mb-0">Formulario GOB.PE</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center justify-content-between">
+
+          <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <span class="about-meta">Directorio de Funcionarios</span>
+            <h2 class="about-title">Directorio del Consejo Directivo</h2>
+            <p class="about-description">El Consejo Directivo de la UGEL Cangallo es el órgano encargado de la toma de decisiones clave para el desarrollo y la gestión educativa en la provincia. Compuesto por profesionales comprometidos con la mejora de la calidad educativa, su misión es garantizar la implementación de políticas del Ministerio de Educación, supervisar el cumplimiento de normativas y promover la participación de la comunidad educativa. A través de su trabajo, busca asegurar una educación inclusiva, equitativa y de calidad, optimizando recursos y promoviendo el desarrollo integral de los estudiantes en la región, estos son los valores que guían nuestra labor.</p>
+            <div class="row feature-list-wrapper">
+              <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Compromiso</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Equidad</li>
+                  <li><i class="bi bi-check-circle-fill"></i> transparencia</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Colaboración</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Respeto</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Innovación</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="info-wrapper">
+              <div class="row gy-4">
+                <div class="col-lg-5">
+                  <div class="profile d-flex align-items-center gap-3">
+                    <img src="assets/img/avatar-1.jpg" alt="CEO Profile" class="profile-image">
+                    <div>
+                      <h4 class="profile-name">J. Ruth Palomino Gutiérrez</h4>
+                      <p class="profile-position">Directora de la UGEL Cangallo</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="contact-info d-flex align-items-center gap-2">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div>
+                      <p class="contact-label">Numero de telefono</p>
+                      <p class="contact-number">+51 989 445 650</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="image-wrapper">
+              <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
+                <img src="assets/img/about-5.jpg" alt="Business Meeting" class="img-fluid main-image rounded-4">
+                <img src="assets/img/about-2.jpg" alt="Team Discussion" class="img-fluid small-image rounded-4">
+              </div>
+              <div class="experience-badge floating">
+                <h3><span>Más de</span> 24 años</h3>
+                <p>comprometidos con la educación...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Administración</h2>
+        <p>La administración de la UGEL Cangallo se encarga de gestionar eficientemente los recursos, procesos y políticas educativas para garantizar una educación de calidad en la provincia.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="d-flex justify-content-center">
+
+          <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                <h4>Recursos Humanos</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                <h4>Abastecimiento</h4>
+              </a><!-- End tab nav item -->
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                <h4>Patrimonio</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+          </ul>
+
+        </div>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="features-tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Recursos Humanos</h3>
+                <p class="fst-italic">
+                  El unidad de Recursos Humanos de la UGEL Cangallo se encarga de gestionar y desarrollar el talento humano, asegurando que los docentes y personal administrativo reciban el apoyo necesario para desempeñar su labor con eficiencia y compromiso.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <a href="url_a_la_pagina1.html"><span>Formatos</span></a></li>
+                  <li><i class="bi bi-check2-all"></i> <a href="url_a_la_pagina1.html"><span>Consulta rapida - Beneficios Sociales</span></a></li>
+                  <li><i class="bi bi-check2-all"></i> <a href="url_a_la_pagina1.html"><span>Plataforma Digital Única de Denuncias del Ciudadano</span></a></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-illustration-1.webp" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane fade" id="features-tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Abastecimiento</h3>
+                <p class="fst-italic">
+                  La oficina de Abastecimiento de la UGEL Cangallo se encarga de la gestión y provisión oportuna de materiales, equipos y recursos necesarios para el adecuado funcionamiento de las instituciones educativas, garantizando que los estudiantes y docentes cuenten con lo necesario para su desarrollo académico.</p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <a href="url_a_la_pagina1.html"><span>ANEXO 4</span></a></li>
+                  <li><i class="bi bi-check2-all"></i> <a href="url_a_la_pagina1.html"><span>ANEXO 5</span></a></li>
+                  <li><i class="bi bi-check2-all"></i> <a href="url_a_la_pagina1.html"><span>ANEXO 6</span></a></li>
+                  
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-illustration-2.webp" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane fade" id="features-tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Patrimonio</h3>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <a href="url_a_la_pagina1.html"><span>Formatos de inventario</span></a></li>
+                  
+                </ul>
+                <p class="fst-italic">
+                  La oficina de Patrimonio de la UGEL Cangallo se encarga de la gestión, conservación y mantenimiento de los bienes y recursos materiales de las instituciones educativas, asegurando su correcta administración y preservación para el uso y beneficio de la comunidad educativa.</p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-illustration-3.webp" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+<!-- Features Cards Section -->
+<section id="features-cards" class="features-cards section">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Comunicados -->
+      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+        <a href="pagina_comunicados.html" class="feature-link">
+          <div class="feature-box orange">
+            <i class="bi bi-megaphone"></i> <!-- Ícono de megáfono para comunicados -->
+            <h4>Comunicados</h4>
+            <p>Un comunicado de la UGEL Cangallo es un mensaje oficial emitido para informar a la comunidad educativa sobre eventos, decisiones, normativas o actividades relevantes, asegurando la difusión oportuna y clara de información importante para estudiantes, docentes y autoridades.</p>
+          </div>
+        </a>
+      </div><!-- End Feature Box -->
+
+      <!-- Oficio -->
+      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+        <a href="pagina_oficio.html" class="feature-link">
+          <div class="feature-box blue">
+            <i class="bi bi-file-earmark-text"></i> <!-- Ícono de archivo para oficio -->
+            <h4>Oficio</h4>
+            <p>Un oficio de la UGEL Cangallo es un documento formal utilizado para realizar comunicaciones oficiales entre las autoridades educativas, instituciones y otros organismos, con el fin de transmitir instrucciones, solicitudes o información relevante en el ámbito educativo.</p>
+          </div>
+        </a>
+      </div><!-- End Feature Box -->
+
+      <!-- Resoluciones -->
+      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+        <a href="pagina_resoluciones.html" class="feature-link">
+          <div class="feature-box green">
+            <i class="bi bi-file-earmark-check"></i> <!-- Ícono de archivo con check para resoluciones -->
+            <h4>Resoluciones</h4>
+            <p>Las resoluciones de la UGEL Cangallo son actos administrativos oficiales que establecen decisiones o disposiciones sobre asuntos educativos, como nombramientos, aprobaciones de proyectos o cambios normativos, y tienen carácter vinculante para la comunidad educativa.</p>
+          </div>
+        </a>
+      </div><!-- End Feature Box -->
+
+      <!-- Directivas -->
+      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+        <a href="pagina_directivas.html" class="feature-link">
+          <div class="feature-box red">
+            <i class="bi bi-clipboard-check"></i> <!-- Ícono de clipboard con check para directivas -->
+            <h4>Directivas</h4>
+            <p>Las directivas de la UGEL Cangallo son documentos normativos que establecen las pautas y procedimientos a seguir en las instituciones educativas y administrativas, con el fin de garantizar el cumplimiento de las políticas y objetivos del sistema educativo de manera eficiente y ordenada.</p>
+          </div>
+        </a>
+      </div><!-- End Feature Box -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Features Cards Section -->
+
+<!-- Cuadro para mostrar documentos en 4 columnas y 8 filas -->
+
+<section id="documentos" class="documents section">
+  <div class="container">
+    <h3 class="text-center" data-aos="fade-up" data-aos-delay="100">Comunicados y Documentos</h3>
+
+    <!-- Fila de 4 columnas, repetido para 8 filas -->
+    <div class="row row-cols-1 row-cols-md-4 g-4" data-aos="fade-up" data-aos-delay="200">
+      
+      <!-- Ejemplo modificado para una fila -->
+      <div class="col">
+        <div class="document-box">
+          <a href="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/view?usp=drive_link" target="_blank">
+            <iframe src="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/preview" width="100%" height="150px"></iframe>
+          </a>
+          <h5 class="text-center">Comunicado 1</h5>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="document-box">
+          <a href="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/view?usp=drive_link" target="_blank">
+            <iframe src="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/preview" width="100%" height="150px"></iframe>
+          </a>
+          <h5 class="text-center">Comunicado 2</h5>
+        </div>
+      </div>
+
+      <!-- Repite lo mismo para los demás documentos en PDF -->
+      
+      <div class="col">
+        <div class="document-box">
+          <a href="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/view?usp=drive_link" target="_blank">
+            <iframe src="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/preview" width="100%" height="150px"></iframe>
+          </a>
+          <h5 class="text-center">Comunicado 3</h5>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="document-box">
+          <a href="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/view?usp=drive_link" target="_blank">
+            <iframe src="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/preview" width="100%" height="150px"></iframe>
+          </a>
+          <h5 class="text-center">Comunicado 4</h5>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="document-box">
+          <a href="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/view?usp=drive_link" target="_blank">
+            <iframe src="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/preview" width="100%" height="150px"></iframe>
+          </a>
+          <h5 class="text-center">Comunicado 5</h5>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="document-box">
+          <a href="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/view?usp=drive_link" target="_blank">
+            <iframe src="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/preview" width="100%" height="150px"></iframe>
+          </a>
+          <h5 class="text-center">Comunicado 6</h5>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="document-box">
+          <a href="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/view?usp=drive_link" target="_blank">
+            <iframe src="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/preview" width="100%" height="150px"></iframe>
+          </a>
+          <h5 class="text-center">Comunicado 7</h5>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="document-box">
+          <a href="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/view?usp=drive_link" target="_blank">
+            <iframe src="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/preview" width="100%" height="150px"></iframe>
+          </a>
+          <h5 class="text-center">Comunicado 8</h5>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="document-box">
+          <a href="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/view?usp=drive_link" target="_blank">
+            <iframe src="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/preview" width="100%" height="150px"></iframe>
+          </a>
+          <h5 class="text-center">Comunicado 9</h5>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="document-box">
+          <a href="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/view?usp=drive_link" target="_blank">
+            <iframe src="https://drive.google.com/file/d/1MtyaPXTTn00VxwmSNdVe7Y2_iDoJSFfC/preview" width="100%" height="150px"></iframe>
+          </a>
+          <h5 class="text-center">Comunicado 10</h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">UGEL CANGALLO</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Plaza Principal S/N</p>
+            <p>Ayacucho, Cangallo</p>
+            <p class="mt-3"><strong>Telefono:</strong> <span>+51 966 666 666</span></p>
+            <p><strong>Correo Electronico:</strong> <span>mesadepartes@ugelcangallo.gob.pe
+            </span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Enlaces útiles</h4>
+          <ul>
+            <li><a href="#">Mi Boleta</a></li>
+            <li><a href="#">Portal de Transparencia</a></li>
+            <li><a href="#">GOB.PE</a></li>
+            <li><a href="#">SGD</a></li>
+            <li><a href="#">ESCALE</a></li>
+          </ul>
+        </div>
+
+<!-- Mapa de la UGEL Cangallo -->
+<div class="container footer-map mt-4">
+  <h4>Ubicación de la UGEL Cangallo</h4>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1370.8890088976232!2d-74.14419070502562!3d-13.62978003683389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9112f9443540f34d%3A0x22b31f3d1363094f!2sUGEL%20CANGALLO!5e0!3m2!1ses-419!2spe!4v1736529538595!5m2!1ses-419!2spe" 
+    width="100%" 
+    height="250" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p><span>UGEL CANGALLO</span> <strong class="px-1 sitename">-</strong> <span>Todos Los Derechos Reservados</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Diseñado por la <a href="https://bootstrapmade.com/">Oficina de Informatica</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+
+      <script>
+        function showPopup() {
+          document.getElementById('popup').style.display = 'block';
+          document.getElementById('overlay').style.display = 'block';
+    
+          setTimeout(closePopup, 8000); // Cierra después de 8 segundos
+        }
+    
+        function closePopup() {
+          document.getElementById('popup').style.display = 'none';
+          document.getElementById('overlay').style.display = 'none';
+        }
+    
+        // Mostrar el PopUp cuando la página carga
+        window.onload = showPopup;
+      </script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</script>
+
+</html>
